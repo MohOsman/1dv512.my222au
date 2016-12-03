@@ -1,0 +1,222 @@
+Philosopher 3is THINKING
+Philosopher 0is THINKING
+Philosopher 4is THINKING
+Philosopher 1is THINKING
+Philosopher 2is THINKING
+philosopher 0is HUNGRY
+philosopher 0 -------- picked up left chopstik----------- 0
+philosopher 0 picked up right chopstik 1
+Philosopher 0 is EATING
+philosopher 0 put the rightchopstik 1 down
+philosopher 0 put the leftchopstik 0 down
+Philosopher 0is THINKING
+philosopher 1is HUNGRY
+philosopher 1 -------- picked up left chopstik----------- 1
+philosopher 1 picked up right chopstik 2
+Philosopher 1 is EATING
+philosopher 4is HUNGRY
+philosopher 4 -------- picked up left chopstik----------- 4
+philosopher 4 picked up right chopstik 0
+philosopher 3is HUNGRY
+philosopher 3 -------- picked up left chopstik----------- 3
+Philosopher 4 is EATING
+philosopher 1 put the rightchopstik 2 down
+philosopher 1 put the leftchopstik 1 down
+Philosopher 1is THINKING
+philosopher 2is HUNGRY
+philosopher 2 -------- picked up left chopstik----------- 2
+philosopher 4 put the rightchopstik 0 down
+philosopher 4 put the leftchopstik 4 down
+philosopher 0is HUNGRY
+philosopher 0 -------- picked up left chopstik----------- 0
+philosopher 3 picked up right chopstik 4
+Philosopher 3 is EATING
+Philosopher 4is THINKING
+philosopher 0 picked up right chopstik 1
+Philosopher 0 is EATING
+philosopher 0 put the rightchopstik 1 down
+philosopher 0 put the leftchopstik 0 down
+Philosopher 0is THINKING
+philosopher 1is HUNGRY
+philosopher 1 -------- picked up left chopstik----------- 1
+philosopher 3 put the rightchopstik 4 down
+philosopher 3 put the leftchopstik 3 down
+Philosopher 3is THINKING
+philosopher 2 picked up right chopstik 3
+Philosopher 2 is EATING
+philosopher 2 put the rightchopstik 3 down
+philosopher 2 put the leftchopstik 2 down
+Philosopher 2is THINKING
+philosopher 1 picked up right chopstik 2
+Philosopher 1 is EATING
+philosopher 4is HUNGRY
+philosopher 4 -------- picked up left chopstik----------- 4
+philosopher 4 picked up right chopstik 0
+Philosopher 4 is EATING
+philosopher 1 put the rightchopstik 2 down
+philosopher 1 put the leftchopstik 1 down
+Philosopher 1is THINKING
+philosopher 4 put the rightchopstik 0 down
+philosopher 4 put the leftchopstik 4 down
+philosopher 0is HUNGRY
+Philosopher 4is THINKING
+philosopher 0 -------- picked up left chopstik----------- 0
+philosopher 0 picked up right chopstik 1
+Philosopher 0 is EATING
+philosopher 2is HUNGRY
+philosopher 2 -------- picked up left chopstik----------- 2
+philosopher 2 picked up right chopstik 3
+Philosopher 2 is EATING
+philosopher 2 put the rightchopstik 3 down
+philosopher 2 put the leftchopstik 2 down
+Philosopher 2is THINKING
+philosopher 3is HUNGRY
+philosopher 3 -------- picked up left chopstik----------- 3
+philosopher 3 picked up right chopstik 4
+Philosopher 3 is EATING
+philosopher 3 put the rightchopstik 4 down
+philosopher 3 put the leftchopstik 3 down
+philosopher 4is HUNGRY
+philosopher 4 -------- picked up left chopstik----------- 4
+Philosopher 3is THINKING
+philosopher 2is HUNGRY
+philosopher 2 -------- picked up left chopstik----------- 2
+philosopher 2 picked up right chopstik 3
+Philosopher 2 is EATING
+philosopher 0 put the rightchopstik 1 down
+philosopher 0 put the leftchopstik 0 down
+philosopher 1is HUNGRY
+philosopher 4 picked up right chopstik 0
+Philosopher 0is THINKING
+Philosopher 4 is EATING
+philosopher 1 -------- picked up left chopstik----------- 1
+philosopher 2 put the rightchopstik 3 down
+philosopher 2 put the leftchopstik 2 down
+Philosopher 2is THINKING
+philosopher 1 picked up right chopstik 2
+Philosopher 1 is EATING
+philosopher 3is HUNGRY
+philosopher 3 -------- picked up left chopstik----------- 3
+philosopher 4 put the rightchopstik 0 down
+philosopher 4 put the leftchopstik 4 down
+Philosopher 4is THINKING
+philosopher 3 picked up right chopstik 4
+Philosopher 3 is EATING
+philosopher 0is HUNGRY
+philosopher 0 -------- picked up left chopstik----------- 0
+philosopher 1 put the rightchopstik 2 down
+philosopher 1 put the leftchopstik 1 down
+Philosopher 1is THINKING
+philosopher 0 picked up right chopstik 1
+Philosopher 0 is EATING
+philosopher 3 put the rightchopstik 4 down
+philosopher 3 put the leftchopstik 3 down
+Philosopher 3is THINKING
+philosopher 4is HUNGRY
+philosopher 4 -------- picked up left chopstik----------- 4
+philosopher 2is HUNGRY
+philosopher 2 -------- picked up left chopstik----------- 2
+philosopher 2 picked up right chopstik 3
+Philosopher 2 is EATING
+philosopher 0 put the rightchopstik 1 down
+philosopher 0 put the leftchopstik 0 down
+Philosopher 0is THINKING
+philosopher 4 picked up right chopstik 0
+Philosopher 4 is EATING
+philosopher 4 put the rightchopstik 0 down
+philosopher 4 put the leftchopstik 4 down
+Philosopher 4is THINKING
+philosopher 1is HUNGRY
+philosopher 1 -------- picked up left chopstik----------- 1
+philosopher 2 put the rightchopstik 3 down
+philosopher 2 put the leftchopstik 2 down
+philosopher 3is HUNGRY
+philosopher 1 picked up right chopstik 2
+Philosopher 2is THINKING
+Philosopher 1 is EATING
+philosopher 3 -------- picked up left chopstik----------- 3
+philosopher 1 put the rightchopstik 2 down
+philosopher 3 picked up right chopstik 4
+philosopher 1 put the leftchopstik 1 down
+Philosopher 3 is EATING
+Philosopher 1is THINKING
+philosopher 0is HUNGRY
+philosopher 0 -------- picked up left chopstik----------- 0
+philosopher 0 picked up right chopstik 1
+Philosopher 0 is EATING
+philosopher 3 put the rightchopstik 4 down
+philosopher 3 put the leftchopstik 3 down
+Philosopher 3is THINKING
+philosopher 0 put the rightchopstik 1 down
+philosopher 0 put the leftchopstik 0 down
+Philosopher 0is THINKING
+philosopher 2is HUNGRY
+philosopher 2 -------- picked up left chopstik----------- 2
+philosopher 2 picked up right chopstik 3
+Philosopher 2 is EATING
+philosopher 4is HUNGRY
+philosopher 4 -------- picked up left chopstik----------- 4
+philosopher 4 picked up right chopstik 0
+Philosopher 4 is EATING
+philosopher 4 put the rightchopstik 0 down
+philosopher 4 put the leftchopstik 4 down
+Philosopher 4is THINKING
+philosopher 0is HUNGRY
+philosopher 0 -------- picked up left chopstik----------- 0
+philosopher 0 picked up right chopstik 1
+Philosopher 0 is EATING
+philosopher 0 put the rightchopstik 1 down
+philosopher 0 put the leftchopstik 0 down
+Philosopher 0is THINKING
+philosopher 1is HUNGRY
+philosopher 1 -------- picked up left chopstik----------- 1
+philosopher 2 put the rightchopstik 3 down
+philosopher 2 put the leftchopstik 2 down
+philosopher 3is HUNGRY
+philosopher 3 -------- picked up left chopstik----------- 3
+philosopher 1 picked up right chopstik 2
+Philosopher 1 is EATING
+Philosopher 2is THINKING
+philosopher 3 picked up right chopstik 4
+Philosopher 3 is EATING
+philosopher 0is HUNGRY
+philosopher 0 -------- picked up left chopstik----------- 0
+philosopher 1 put the rightchopstik 2 down
+philosopher 3 put the rightchopstik 4 down
+philosopher 1 put the leftchopstik 1 down
+philosopher 4is HUNGRY
+philosopher 0 picked up right chopstik 1
+philosopher 3 put the leftchopstik 3 down
+Philosopher 0 is EATING
+philosopher 4 -------- picked up left chopstik----------- 4
+Philosopher 1is THINKING
+Philosopher 3is THINKING
+philosopher 0 put the rightchopstik 1 down
+philosopher 0 put the leftchopstik 0 down
+philosopher 4 picked up right chopstik 0
+Philosopher 4 is EATING
+philosopher 4 put the rightchopstik 0 down
+philosopher 4 put the leftchopstik 4 down
+philosopher 2is HUNGRY
+philosopher 2 -------- picked up left chopstik----------- 2
+philosopher 2 picked up right chopstik 3
+Philosopher 2 is EATING
+philosopher 2 put the rightchopstik 3 down
+philosopher 2 put the leftchopstik 2 down
+philosopher 1is HUNGRY
+philosopher 1 -------- picked up left chopstik----------- 1
+philosopher 1 picked up right chopstik 2
+philosopher 3is HUNGRY
+philosopher 3 -------- picked up left chopstik----------- 3
+Philosopher 1 is EATING
+philosopher 3 picked up right chopstik 4
+Philosopher 3 is EATING
+philosopher 3 put the rightchopstik 4 down
+philosopher 3 put the leftchopstik 3 down
+philosopher 1 put the rightchopstik 2 down
+philosopher 1 put the leftchopstik 1 down
+0 Average thinking time - 0 Average Eating time - 29
+1 Average thinking time - 100 Average Eating time - 67
+2 Average thinking time - 84 Average Eating time - 34
+3 Average thinking time - 100 Average Eating time - 17
+4 Average thinking time - 50 Average Eating time - 0
