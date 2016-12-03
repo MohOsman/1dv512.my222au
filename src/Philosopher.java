@@ -59,7 +59,7 @@ public class Philosopher implements Runnable {
 
 
     public long getAverageHungryTime() {
-        return (hungryTotalTime/1000000000)/countHungryTime;
+        return (hungryTotalTime/1000)*100/countHungryTime;
     }
 
 
@@ -70,6 +70,7 @@ public class Philosopher implements Runnable {
 
     @Override
     public void run() {
+        starthungryTime = System.currentTimeMillis();
 
 
         while (!arePhilosphersDone.get()) {
@@ -86,14 +87,14 @@ public class Philosopher implements Runnable {
 
 
 
-               if (leftChopStick.tryLock(1,TimeUnit.DAYS)) {
+               if (leftChopStick.tryLock(1,TimeUnit.SECONDS)) {
                     System.out.println("philosopher " + getID() + " is " + state);
                     System.out.println("philosopher " + getID() + " ----picked up left chopstick---- [" + leftChopStick.getChopstickID()+"]");
-                    if (rightChopstick.tryLock(2,TimeUnit.DAYS)) {
+                    if (rightChopstick.tryLock(2,TimeUnit.SECONDS)) {
                         System.out.println("philosopher " + getID() + " ----picked up right chopstick---- [" +rightChopstick.getChopstickID()+"]");
                         long endtime = System.currentTimeMillis();
-                        hungryTotalTime += (endtime - starthungryTime) + countHungryTime;
-                        countHungryTime++;
+                        hungryTotalTime = (endtime - starthungryTime) + countHungryTime;
+
                         try {
                             eat();
                             PutDownRightChopStick();
@@ -155,6 +156,7 @@ public class Philosopher implements Runnable {
 
     private void hungry() {
             state = State.HUNGRY;
+        countHungryTime++;
 
     }
 }
