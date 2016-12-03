@@ -30,7 +30,7 @@ public class Main {
             System.out.println("Philosopher {"+p.getID()  + "} Average thinking time - " + p.getAverageThinkingTime()+ " Average eating time - " + p.getAverageEatingTime()+  " Average hungryTime  time- " + p.getAverageHungryTime());
 
         }
-        ;
+
 
 
     }
