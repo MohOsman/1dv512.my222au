@@ -7,9 +7,7 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-/**
- * Created by MohamedOsman on 2016-11-22.
- */
+
 public class DiningPhilosopher {
     private ArrayList<Philosopher> philosophers = new ArrayList<>();
     private ArrayList<Chopstick> chopstickses = new ArrayList<>();

@@ -1,3 +1,5 @@
+import com.sun.tools.doclets.formats.html.SourceToHTMLConverter;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -26,10 +28,17 @@ public class Main {
         dp.start();
 
         ArrayList<Philosopher> philosophers = dp.getPhilosophers();
+        System.out.println("--------------------------------");
         for (Philosopher p : philosophers) {
             System.out.println("Philosopher {"+p.getID()  + "} Average thinking time - " + p.getAverageThinkingTime()+ " Average eating time - " + p.getAverageEatingTime()+  " Average hungryTime  time- " + p.getAverageHungryTime());
 
         }
+        System.out.println("------------------------------");
+        for (Philosopher p : philosophers) {
+            System.out.println("Philosopher {"+p.getID()  + "} number of eating turns - " + p.getNumberOfEatingTurns());
+
+        }
+
 
 
 

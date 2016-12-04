@@ -6,7 +6,7 @@ public class Philosopher implements Runnable {
 
     // time
 
-    private int countEatinTime = 0;
+    private int countEatingTime = 0;
     private int countThinkingTime = 0;
     private int countHungryTime = 0;
     private long hungryTotalTime;
@@ -49,12 +49,16 @@ public class Philosopher implements Runnable {
 
 
     int getAverageEatingTime() {
-        return eatingTotalTime / countEatinTime;
+        return eatingTotalTime / countEatingTime;
     }
 
 
     long getAverageHungryTime() {
-        return (hungryTotalTime/1000)*100/countHungryTime;
+        return (hungryTotalTime/countHungryTime)/100;
+    }
+
+    int getNumberOfEatingTurns() {
+        return countEatingTime;
     }
 
 
@@ -65,7 +69,7 @@ public class Philosopher implements Runnable {
 
     @Override
     public void run() {
-        long starthungryTime = System.currentTimeMillis();
+        long startHungryTime = System.currentTimeMillis();
 
 
         while (!arePhilosphersDone.get()) try {
@@ -75,17 +79,18 @@ public class Philosopher implements Runnable {
             if (leftChopStick.getQueueLength() > 0) {
                 System.out.println(leftChopStick.getQueueLength());
                 System.out.println("Because of DeadLock has been detected  the program execution  stopped. ");
+                System.exit(0);
 
             }
 
 
-            if (leftChopStick.tryLock(1, TimeUnit.SECONDS)) {
+            else if (leftChopStick.tryLock(1, TimeUnit.SECONDS)) {
                 System.out.println("philosopher " + getID() + " is " + state);
                 System.out.println("philosopher " + getID() + " ----picked up left chopstick---- [" + leftChopStick.getChopstickID() + "]");
-                if (rightChopstick.tryLock(2, TimeUnit.SECONDS)) {
+                if (rightChopstick.tryLock(3, TimeUnit.SECONDS)) {
                     System.out.println("philosopher " + getID() + " ----picked up right chopstick---- [" + rightChopstick.getChopstickID() + "]");
-                    long endtime = System.currentTimeMillis();
-                    hungryTotalTime = (endtime - starthungryTime) + countHungryTime;
+                    long endTime = System.currentTimeMillis();
+                    hungryTotalTime += (endTime - startHungryTime);
 
                     try {
                         eat();
@@ -120,7 +125,7 @@ public class Philosopher implements Runnable {
 
     private void think() throws InterruptedException {
         state = State.THINKING;
-        System.out.println("Philosopher " + getID() + "is " + state);
+        System.out.println("Philosopher " + getID() + " is " + state);
         int randomthink = randomTime.nextInt(10 + 1) * 100;
         Thread.sleep(randomthink);
         thinkingTotalTime = randomthink + countThinkingTime;
@@ -135,15 +140,16 @@ public class Philosopher implements Runnable {
         System.out.println("Philosopher " + getID() + " is " + state);
         int randomEatTime = randomTime.nextInt(10 + 1) * 100;
         Thread.sleep(randomEatTime);
-        eatingTotalTime = randomEatTime + countEatinTime;
-        countEatinTime++;
+        eatingTotalTime = randomEatTime + countEatingTime;
+        countEatingTime++;
 
 
     }
 
 
     private void hungry() {
-            state = State.HUNGRY;
+
+        state = State.HUNGRY;
         countHungryTime++;
 
     }
