@@ -11,7 +11,7 @@ public class DiningPhilosopher {
     private Thread thread = null;
     private ExecutorService executorService = null;
 
-    public void setSimulationtime(long simulationTime) {
+    public void setSimulationTime(long simulationTime) {
         this.simulationTime = simulationTime;
     }
 

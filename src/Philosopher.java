@@ -74,7 +74,7 @@ public class Philosopher implements Runnable {
 
         while (!arePhilosphersDone.get()) try {
             think();
-            Thread.sleep(500);
+
 
             if (leftChopStick.getQueueLength() > 0) {
                 System.out.println(leftChopStick.getQueueLength());
@@ -83,23 +83,17 @@ public class Philosopher implements Runnable {
 
             }
 
-
             else if (leftChopStick.tryLock(1, TimeUnit.SECONDS)) {
                 System.out.println("philosopher " + getID() + " is " + state);
                 System.out.println("philosopher " + getID() + " ----picked up left chopstick---- [" + leftChopStick.getChopstickID() + "]");
-                if (rightChopstick.tryLock(3, TimeUnit.SECONDS)) {
+                if (rightChopstick.tryLock(2, TimeUnit.SECONDS)) { // waits two seconds if other philosopher is eating
                     System.out.println("philosopher " + getID() + " ----picked up right chopstick---- [" + rightChopstick.getChopstickID() + "]");
                     long endTime = System.currentTimeMillis();
                     hungryTotalTime += (endTime - startHungryTime);
-
-                    try {
-                        eat();
-                        PutDownRightChopStick();
-                    } finally {
-                        putDownLeftChopStick();
-                    }
+                    eat();
+                    PutDownRightChopStick();
                 }
-
+                putDownLeftChopStick();
             }
 
 
